@@ -1,4 +1,4 @@
-# One Hackathon - Enterprise Knowledge & Document Intelligence Copilot
+# Enterprise Knowledge & Document Intelligence Copilot
 
 Welcome to the Hack to Skill: Enterprise Knowledge & Document Intelligence Copilot challenge.
 
