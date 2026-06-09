@@ -16,19 +16,6 @@ This challenge addresses the full lifecycle of enterprise knowledge management: 
 
 ---
 
-## About the Sandbox Environment
-
-   | Resources | Value | Remarks |
-   | --- | --- | --- |
-   | Enabled Services | `Azure AI Search` <br> `Microsoft AI Foundry` <br> `Azure Document Intelligence` <br> `Azure Blob Storage` <br> `Microsoft Copilot Studio` <br> `Power Automate Premium` <br> `Microsoft 365 Business Standard` | You have full access over the Azure subscription. Use these services to build the end-to-end knowledge copilot platform. |
-   | Azure Entra ID User | Pre-created Entra ID user account | You will get one Entra ID User Account with access to all required services. |
-   | Azure Subscription Permissions | **Owner** privilege over Azure Subscription | You will get Owner access to the Azure subscription. |
-   | Azure Credit | **$50 USD** | Consumption limit is set on Azure spend to 50 USD. |
-   | Credit Alerts | Credit Alerts are set on consumption of 25%, 50%, 75%, 85%, 90%, 95% and 100% of total Azure credits. | Make sure to check your registered email's inbox for any alert-related mails. Alerts give you a head start to keep your Azure spending in control and to plan out the remaining credits in the best way possible. |
-   | Sandbox Duration | 8 Hours or until Azure Consumption Credits are exhausted. | The sandbox environment will be deleted automatically after 8 Hours or once the Azure credits are exhausted, whichever comes first. |
-
----
-
 ## Why This is Enterprise-Ready - Not Just Another Chatbot
 
 If you have worked with Copilot Studio before, you may have built an agent that connects to SharePoint and answers questions. What you are building here is architecturally different at every layer.
@@ -50,24 +37,15 @@ This platform is designed to be connected to real enterprise identity, plugged i
 
 ---
 
-## Best Practices:
-
-+ **Resources usage:** Please stop or scale down Azure AI Search, Document Intelligence, and other resources when not in use to minimize Azure spend.
-+ **Azure Cost Analysis:** Maintain a practice of regularly checking the Cost Analysis report for the assigned Azure subscription to ensure sustainability of the environment over the challenge duration.
-+ **Alert notifications:** Make sure to check your registered email's inbox for any alert-related emails. Alerts give you a head start to keep your Azure spending in control.
-+ **Document corpus scope:** Keep your test document corpus focused and representative. Processing large volumes of documents will consume credits quickly during the hackathon.
-
----
-
 ## Hack to Skill Format: Challenge-Based
 
 This hackathon is structured into two progressive challenges that build the enterprise knowledge platform in two distinct phases. The first challenge focuses on the intelligence backend. The second challenge focuses on the user-facing product built on top of it.
 
-- **Challenge 1 - Intelligence Pipeline: Extraction, Indexing & Grounded AI**  
-  Set up the document corpus in Blob Storage, extract structured content using Document Intelligence, build a semantic and vector-enabled knowledge index in Azure AI Search, and develop a grounded citation-aware AI agent in Microsoft AI Foundry. This challenge delivers the intelligence layer that everything else depends on.
+- **Challenge 1 - Phase 1: Build the Brain - Extraction, Indexing & Grounded AI**  
+  Set up the document corpus in Blob Storage, extract structured content using Document Intelligence, build a semantic and vector-enabled knowledge index in Azure AI Search, and develop a grounded citation-aware AI agent in Microsoft AI Foundry. This phase delivers the intelligence layer that everything else depends on.
 
-- **Challenge 2 - Copilot Experience: Interface, Automation & Web Deployment**  
-  Wire the Foundry agent to a Copilot Studio copilot with defined conversation flows for real employee scenarios, automate document ingestion using Power Automate, and publish the copilot as a live web channel accessible via a public URL. This challenge delivers the finished product employees can use.
+- **Challenge 2 - Phase 2: Ship the Product - Copilot, Automation & Live Deployment**  
+  Wire the Foundry agent to a Copilot Studio copilot with defined conversation flows for real employee scenarios, automate document ingestion using Power Automate, and publish the copilot as a live web channel accessible via a public URL. This phase delivers the finished product employees can use.
 
 Challenge 1 must be completed before starting Challenge 2. The system is not complete until both challenges are finished and the copilot is live on the web channel with validated, cited responses.
 

@@ -1,6 +1,4 @@
-## Day 01 - Morning
-
-# Challenge 1: Intelligence Pipeline - Extraction, Indexing & Grounded AI
+# Challenge 1 - Phase 1: Build the Brain - Extraction, Indexing & Grounded AI
 
 ## Goal
 
@@ -128,4 +126,4 @@ This submission is mandatory.
 
 Failure to submit these artifacts will result in the challenge being marked as incomplete.
 
-## Congratulations! You have successfully completed Challenge 1
+## Congratulations! You have successfully completed Phase 1

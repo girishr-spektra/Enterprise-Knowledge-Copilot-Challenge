@@ -1,6 +1,4 @@
-## Day 01 - Afternoon
-
-# Challenge 2: Copilot Experience - Interface, Automation & Web Deployment
+# Challenge 2 - Phase 2: Ship the Product - Copilot, Automation & Live Deployment
 
 ## Goal
 
@@ -138,4 +136,4 @@ This submission is mandatory.
 
 Failure to submit these artifacts will result in the challenge being marked as incomplete.
 
-## Congratulations! You have successfully completed Challenge 2 and the full Enterprise Knowledge & Document Intelligence Copilot Hackathon
+## Congratulations! You have successfully completed Phase 2 and the full Enterprise Knowledge & Document Intelligence Copilot Hackathon
