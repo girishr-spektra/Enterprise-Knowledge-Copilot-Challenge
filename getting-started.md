@@ -52,11 +52,17 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
 ---
 
-## Prepare Your Document Corpus
+## Locate the Sample Dataset
 
-Before starting the challenge, you need a representative set of enterprise documents to work with. These will form the knowledge base your copilot will operate over.
+Before starting the challenge, verify that the sample dataset has been provisioned in the lab environment. These documents will serve as the enterprise knowledge source for your copilot throughout the challenge.
 
-add knowledge base downloading steps here  > Girish!
+1. In the Windows search box, enter **File Explorer (1)**, and then select **File Explorer (2)** from the search results.
+
+   ![](./media/know-ent-gs-g3.png)
+
+1. In **This PC (1)**, verify that the **C:\datasets (2)** folder contains the **Finance**, **HR**, and **IT (3)** folders.
+
+   ![](./media/know-ent-gs-g4.png)
 
 ## Setup Copilot studio
 
