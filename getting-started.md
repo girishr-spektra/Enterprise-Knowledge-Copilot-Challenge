@@ -146,10 +146,6 @@ Before starting the challenge, verify that the sample dataset has been provision
 
    ![](./media/ex1-travel-g6.png)
 
-1. You are now ready to start building your **Knowledge Navigator Agent** using Microsoft Copilot Studio.
-
 Click **Next** at the bottom of the page to proceed to the next page.
-
-   ![](./media/auto-it-gt-gr-g3.png)
 
 ## Happy Hacking!!
