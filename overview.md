@@ -24,30 +24,29 @@ The table below shows what separates an enterprise-grade knowledge platform from
 
 | Capability | Basic Knowledge Bot | What You Build Here |
 | --- | --- | --- |
-| Document ingestion | Upload files to SharePoint, auto-indexed | Blob Storage with category structure, Document Intelligence extracts tables, key-value pairs, headings, and metadata into a controlled schema |
-| Retrieval mechanism | Keyword and basic semantic search inside Copilot Studio | Custom Azure AI Search index with chunking strategy, vector embeddings, hybrid search, and citation metadata per chunk |
+| Document ingestion | Upload files to SharePoint, auto-indexed | Blob Storage with Document corpus, AI Search vectorizes and indexes with embeddings in one pass |
+| Retrieval mechanism | Keyword and basic semantic search inside Copilot Studio | Custom Azure AI Search index with vector embeddings, hybrid search, and citation metadata per chunk |
 | AI intelligence layer | Copilot Studio's built-in generative answers | Microsoft AI Foundry agent with engineered prompts, grounding enforcement, hallucination prevention, and structured comparison logic |
-| Answer quality | Generative answer from matched content | Cited response - every answer references the source document, section, and page |
+| Answer quality | Generative answer from matched content | Cited response - every answer references the source document and section |
 | Policy comparison | Not supported | Structured cross-document comparison engine built into the agent |
-| New document handling | Manual re-upload to SharePoint | Power Automate triggers extraction and re-indexing automatically on blob upload |
 | Deployment | Teams channel | Web channel published as a standalone URL accessible from any browser or portal |
-| Trust and auditability | Limited - no source traceability | Full citation chain from response back to source chunk, document, and storage location |
+| Trust and auditability | Limited - no source traceability | Full citation chain from response back to source document |
 
-This platform is designed to be connected to real enterprise identity, plugged into a real intranet or employee portal, and trusted for compliance-sensitive queries. The architecture you build here is the same pattern used in production enterprise AI deployments.
+This platform is designed to be connected to real enterprise identity, plugged into a real intranet or employee portal, and trusted for compliance-sensitive queries.
 
 ---
 
 ## Hack to Skill Format: Challenge-Based
 
-This hackathon is structured into two progressive challenges that build the enterprise knowledge platform in two distinct phases. The first challenge focuses on the intelligence backend. The second challenge focuses on the user-facing product built on top of it.
+This hackathon is structured into two progressive challenges that build the enterprise knowledge platform in two distinct phases.
 
-- **Challenge 1 - Phase 1: Build the Brain - Extraction, Indexing & Grounded AI**  
-  Set up the document corpus in Blob Storage, extract structured content using Document Intelligence, build a semantic and vector-enabled knowledge index in Azure AI Search, and develop a grounded citation-aware AI agent in Microsoft AI Foundry. This phase delivers the intelligence layer that everything else depends on.
+- **Challenge 1 - Build the Brain**  
+  Set up the document corpus in Blob Storage, deploy AI models in Microsoft AI Foundry, build a vectorized knowledge index in Azure AI Search, and develop a grounded citation-aware AI agent. This phase delivers the intelligence layer that everything else depends on.
 
-- **Challenge 2 - Phase 2: Ship the Product - Copilot, Automation & Live Deployment**  
-  Wire the Foundry agent to a Copilot Studio copilot with defined conversation flows for real employee scenarios, automate document ingestion using Power Automate, and publish the copilot as a live web channel accessible via a public URL. This phase delivers the finished product employees can use.
+- **Challenge 2 - Ship the Product**  
+  Build a Copilot Studio agent connected to your AI Search knowledge index, design conversation topics for real employee scenarios, and publish the copilot as a live web channel accessible via a public URL. This phase delivers the finished product employees can use.
 
-Challenge 1 must be completed before starting Challenge 2. The system is not complete until both challenges are finished and the copilot is live on the web channel with validated, cited responses.
+Challenge 1 must be completed before starting Challenge 2.
 
 ---
 
@@ -58,5 +57,3 @@ The CloudLabs support team is available 24/7, 365 days a year via email and live
 **Learner Support Contacts**  
 - Email: cloudlabs-support@spektrasystems.com  
 - Live Chat: https://cloudlabs.ai/labs-support
-
-Click **Next** to proceed to set up the prerequisites for this hackathon.

@@ -58,56 +58,11 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
 Before starting the challenge, you need a representative set of enterprise documents to work with. These will form the knowledge base your copilot will operate over.
 
-1. Prepare or source a collection of at least **10 documents** covering at least **three distinct document categories**. Suggested categories include:
+add knowledge base downloading steps here  > Girish!
 
-   - HR policies (leave policy, code of conduct, travel reimbursement policy)
-   - IT and security standards (acceptable use policy, data classification standard, incident response procedure)
-   - Procurement and vendor contracts (standard vendor agreement, SLA template, purchase order policy)
+## Setup Copilot studio
 
-   > **Note:** You may use publicly available sample enterprise documents, generate representative synthetic documents, or use any organizational content appropriate for this exercise. Documents should be in PDF, Word, or Excel format.
-
-1. Organize your documents into category-based folders locally. This folder structure will map to the container structure you create in Azure Blob Storage during the challenge.
-
-1. Ensure your document set contains at least two documents within one category that represent **different versions or variants of a policy or contract** - these will be used for the comparison objective in the challenge.
-
----
-
-## Verify Access to Required Services
-
-Confirm you can access all services that will be used during the challenge before you begin:
-
-1. From the Azure Portal, verify that the following resources are present in your assigned resource group:
-
-   - Azure Storage Account
-   - Azure AI Search instance
-   - Azure AI Foundry workspace (or confirm you can create one)
-   - Azure Document Intelligence resource
-
-1. Open a new browser tab and navigate to Microsoft Copilot Studio:
-
-   ```
-   https://copilotstudio.microsoft.com
-   ```
-
-   Sign in with the provided credentials and confirm access is granted.
-
-1. Open another browser tab and navigate to Power Automate:
-
-   ```
-   https://make.powerautomate.com
-   ```
-
-   Sign in and confirm access to Premium connectors is available under your license.
-
-1. Navigate to Microsoft AI Foundry:
-
-   ```
-   https://ai.azure.com
-   ```
-
-   Sign in and confirm the pre-provisioned Foundry project is visible, or confirm you have permission to create a new project.
-
-   > **Note:** If any service access is unavailable, navigate to the Environment tab in your challenge portal to retrieve alternate credentials or contact CloudLabs support.
+Add our asusual getting started from copilot studio labs  >  Girish!
 
 ---
 
