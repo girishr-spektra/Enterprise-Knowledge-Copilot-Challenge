@@ -21,7 +21,11 @@ The challenge is complete when a live published copilot answers policy questions
 
 Create the conversational interface that employees will use to query the knowledge base.
 
-- Create a new agent in Microsoft Copilot Studio.
+- In Microsoft Copilot Studio, verify that the **ODL environment** is selected from the environment picker before creating the agent.
+- Create a new agent in Microsoft Copilot Studio with the following name:
+  ```
+  Policy Assistant
+  ```
 - Connect Azure AI Search as a knowledge source.
 - Configure the agent's instructions to enforce grounded, cited responses - consistent with how the Microsoft Foundry agent was configured in Challenge 1.
 
