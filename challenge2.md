@@ -10,7 +10,7 @@ The challenge is complete when a live published copilot answers policy questions
 
 ## Prerequisites
 
-- Challenge 1 complete - your AI Search index is populated and the Foundry agent is tested.
+- Challenge 1 complete - your AI Search index is populated and the Microsoft Foundry agent is tested.
 - Access to Microsoft Copilot Studio (included with your M365 license).
 
 ---
@@ -21,9 +21,13 @@ The challenge is complete when a live published copilot answers policy questions
 
 Create the conversational interface that employees will use to query the knowledge base.
 
-- Create a new agent in Microsoft Copilot Studio.
+- In Microsoft Copilot Studio, verify that the **ODL environment** is selected from the environment picker before creating the agent.
+- Create a new agent in Microsoft Copilot Studio with the following name:
+  ```
+  Policy Assistant
+  ```
 - Connect Azure AI Search as a knowledge source.
-- Configure the agent's instructions to enforce grounded, cited responses - consistent with how the Foundry agent was configured in Challenge 1.
+- Configure the agent's instructions to enforce grounded, cited responses - consistent with how the Microsoft Foundry agent was configured in Challenge 1.
 
 ---
 

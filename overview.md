@@ -26,7 +26,7 @@ The table below shows what separates an enterprise-grade knowledge platform from
 | --- | --- | --- |
 | Document ingestion | Upload files to SharePoint, auto-indexed | Blob Storage with Document corpus, AI Search vectorizes and indexes with embeddings in one pass |
 | Retrieval mechanism | Keyword and basic semantic search inside Copilot Studio | Custom Azure AI Search index with vector embeddings, hybrid search, and citation metadata per chunk |
-| AI intelligence layer | Copilot Studio's built-in generative answers | Microsoft AI Foundry agent with engineered prompts, grounding enforcement, hallucination prevention, and structured comparison logic |
+| AI intelligence layer | Copilot Studio's built-in generative answers | Microsoft Foundry agent with engineered prompts, grounding enforcement, hallucination prevention, and structured comparison logic |
 | Answer quality | Generative answer from matched content | Cited response - every answer references the source document and section |
 | Policy comparison | Not supported | Structured cross-document comparison engine built into the agent |
 | Deployment | Teams channel | Web channel published as a standalone URL accessible from any browser or portal |
@@ -41,7 +41,7 @@ This platform is designed to be connected to real enterprise identity, plugged i
 This hackathon is structured into two progressive challenges that build the enterprise knowledge platform in two distinct phases.
 
 - **Challenge 1 - Build the Brain**  
-  Set up the document corpus in Blob Storage, deploy AI models in Microsoft AI Foundry, build a vectorized knowledge index in Azure AI Search, and develop a grounded citation-aware AI agent. This phase delivers the intelligence layer that everything else depends on.
+  Set up the document corpus in Blob Storage, deploy AI models in Microsoft Foundry, build a vectorized knowledge index in Azure AI Search, and develop a grounded citation-aware AI agent. This phase delivers the intelligence layer that everything else depends on.
 
 - **Challenge 2 - Ship the Product**  
   Build a Copilot Studio agent connected to your AI Search knowledge index, design conversation topics for real employee scenarios, and publish the copilot as a live web channel accessible via a public URL. This phase delivers the finished product employees can use.

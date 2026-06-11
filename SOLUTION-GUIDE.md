@@ -15,7 +15,7 @@ An enterprise knowledge platform where employees ask natural language questions 
 ```
                         CHALLENGE 1 - Build the Brain
   ┌──────────────┐    ┌──────────────────────────────┐    ┌─────────────────────┐
-  │ Blob Storage │───▶│  AI Search                   │───▶│  AI Foundry Agent   │
+  │ Blob Storage │───▶│  AI Search                   │───▶│  Microsoft Foundry Agent│
   │ knowledge-   │    │  Import + Vectorize           │    │  gpt-4.1 / mini     │
   │ docs (10 doc)│    │  vector index                │    │  grounded in index  │
   └──────────────┘    └──────────────────────────────┘    └─────────────────────┘
@@ -35,7 +35,7 @@ An enterprise knowledge platform where employees ask natural language questions 
 |---|---|
 | **Blob Storage** | Document repository. All 10 PDFs uploaded here. AI Search pulls from here during import. |
 | **AI Search** | Vectorizes and indexes document content in one pass via "Import and vectorize data". Supports hybrid search for the agent. |
-| **AI Foundry** | Hosts the chat and embedding model deployments and the grounded agent. |
+| **Microsoft Foundry** | Hosts the chat and embedding model deployments and the grounded agent. |
 | **Copilot Studio** | Conversational interface. Connects to AI Search directly as a knowledge source. Publishes to web channel. |
 
 ---
@@ -47,7 +47,7 @@ Deploy everything in the **same region** (recommended: Sweden Central or West US
 | Resource | SKU | Notes |
 |---|---|---|
 | Storage Account | Standard LRS | Create container `knowledge-docs` |
-| AI Foundry Hub + Project | Standard | Create hub then project inside it |
+| Microsoft Foundry Hub + Project | Standard | Create hub then project inside it |
 | Azure OpenAI (via Foundry) | - | Deploy `gpt-4.1` or `gpt-4.1-mini` + `text-embedding-ada-002` |
 | Azure AI Search | Basic | Enable semantic search |
 
@@ -64,13 +64,14 @@ Files: HR-001, HR-002, HR-002v2, HR-003, IT-001, IT-002, IT-003, FIN-001, FIN-00
 
 ---
 
-## Step 2 - Deploy Models in AI Foundry
+## Step 2 - Deploy Models in Microsoft Foundry
 
 1. Go to https://ai.azure.com > open your project.
-2. Go to **Models + endpoints** > **+ Deploy model**.
-3. Deploy: `gpt-4.1` or `gpt-4.1-mini` (whichever is available in your region).
-4. Deploy: `text-embedding-ada-002`.
-5. Note both deployment names - you will need them in Steps 3 and 4.
+2. When the portal loads, look for the **Try the old portal** (or **Switch to old portal**) toggle in the top-right area and click it to switch to the classic experience.
+3. Go to **Models + endpoints** > **+ Deploy model**.
+4. Deploy: `gpt-4.1` or `gpt-4.1-mini` (whichever is available in your region).
+5. Deploy: `text-embedding-ada-002`.
+6. Note both deployment names - you will need them in Steps 3 and 4.
 
 ---
 
@@ -79,10 +80,11 @@ Files: HR-001, HR-002, HR-002v2, HR-003, IT-001, IT-002, IT-003, FIN-001, FIN-00
 1. In the Azure Portal, open your AI Search resource.
 2. Click **Import and vectorize data** (top toolbar).
 3. **Data source:** Select **Azure Blob Storage** > pick your storage account and `knowledge-docs` container.
-4. **Vectorize text:** Select your `text-embedding-ada-002` deployment as the embedding source.
-5. **Index name:** `enterprise-knowledge-index`.
-6. Submit - the indexer runs automatically.
-7. Go to **Indexers** and wait for status **Success**.
+4. When prompted to choose an indexing scenario, select **RAG** (Retrieval Augmented Generation).
+5. **Vectorize text:** Select your `text-embedding-ada-002` deployment as the embedding source.
+6. **Index name:** `enterprise-knowledge-index`.
+7. Submit - the indexer runs automatically.
+8. Go to **Indexers** and wait for status **Success**.
 
 **Verify:** Go to **Indexes** > `enterprise-knowledge-index` > **Search explorer**. Run `*` - confirm document count > 0 and content is visible. Run `data classification levels` - should return IT-001 content.
 
@@ -90,7 +92,7 @@ Files: HR-001, HR-002, HR-002v2, HR-003, IT-001, IT-002, IT-003, FIN-001, FIN-00
 
 ## Step 4 - Create the Foundry Agent
 
-1. In AI Foundry, go to **Agents** > **+ New agent**.
+1. In Microsoft Foundry, go to **Agents** > **+ New agent**.
 2. Select your `gpt-4.1` deployment.
 3. **System prompt:**
 
@@ -123,7 +125,7 @@ STRICT RULES:
 
 All 5 should cite a source. If ungrounded, verify the index is populated and the AI Search connection is saved on the agent.
 
-**C1 submission screenshots:** (1) AI Search index showing document count, (2) Foundry playground showing a cited response.
+**C1 submission screenshots:** (1) AI Search index showing document count, (2) Microsoft Foundry playground showing a cited response.
 
 ---
 
