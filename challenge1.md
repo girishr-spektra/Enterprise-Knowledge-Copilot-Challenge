@@ -62,10 +62,8 @@ Prepare the models your agent and index will rely on.
 Build a vector search index from the documents in Blob Storage.
 
 - Create an Azure AI Search instance (Basic SKU is sufficient to control cost).
-- Import and vectorize your datasets and create an index.
-- Once the indexer finishes, validate the index:
-  - Document count is greater than 0.
-  - A test query in Search Explorer returns relevant content from your documents.
+- Use the **Import data** option in AI Search to connect to your Blob Storage container.
+- Set the vectorizer kind to **Microsoft Foundry**, and select your `text-embedding-ada-002` deployment. Run the indexer.
 
 <validation step="082b146f-d781-43f0-8878-89c5680b0af9" />
  

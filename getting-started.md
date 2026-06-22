@@ -58,7 +58,7 @@ Before starting the challenge, download and extract the sample dataset. These do
 
 1. Open a web browser, navigate to the following URL, and download the sample dataset ZIP file:
 
-   ```text
+   ```
    https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/htb-enterprise-knowledge.zip
    ```
 
