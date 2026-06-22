@@ -30,6 +30,13 @@ Set up the storage layer that holds your enterprise policy corpus.
 - Download the knowledge base dataset provided for this lab - 10 policy documents across HR, IT, and Finance categories.
 - Upload all 10 documents to the `knowledge-docs` container.
 
+<validation step="6a8d1575-856e-49b9-af67-fb2668d0fd75" />
+ 
+> **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
 ---
 
 ### 2. AI Models
@@ -40,6 +47,13 @@ Prepare the models your agent and index will rely on.
   - A chat completion model - use `gpt-4.1` or `gpt-4.1-mini` (whichever is available in your region).
   - An embedding model - use `text-embedding-ada-002`.
 - Note the deployment names - you will need them when configuring the index and agent.
+
+<validation step="e80882e6-7459-4042-889a-8761a4763182" />
+ 
+> **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
 
 ---
 
@@ -52,6 +66,13 @@ Build a vector search index from the documents in Blob Storage.
 - Once the indexer finishes, validate the index:
   - Document count is greater than 0.
   - A test query in Search Explorer returns relevant content from your documents.
+
+<validation step="082b146f-d781-43f0-8878-89c5680b0af9" />
+ 
+> **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
 
 ---
 
