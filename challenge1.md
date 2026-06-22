@@ -10,7 +10,7 @@ The challenge is complete when your Microsoft Foundry agent returns accurate, ci
 
 ## Prerequisites
 
-Deploy all resources in the **same region** (recommended: sweden central, west us 2, ) before you start.
+Deploy all resources in the **<inject key="Region"></inject>** region before you start.
 
 | Resource | Recommended SKU | Notes |
 |---|---|---|
@@ -30,6 +30,13 @@ Set up the storage layer that holds your enterprise policy corpus.
 - Download the knowledge base dataset provided for this lab - 10 policy documents across HR, IT, and Finance categories.
 - Upload all 10 documents to the `knowledge-docs` container.
 
+<validation step="6a8d1575-856e-49b9-af67-fb2668d0fd75" />
+ 
+> **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
 ---
 
 ### 2. AI Models
@@ -41,6 +48,13 @@ Prepare the models your agent and index will rely on.
   - An embedding model - use `text-embedding-ada-002`.
 - Note the deployment names - you will need them when configuring the index and agent.
 
+<validation step="e80882e6-7459-4042-889a-8761a4763182" />
+ 
+> **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
 ---
 
 ### 3. Knowledge Index
@@ -48,10 +62,15 @@ Prepare the models your agent and index will rely on.
 Build a vector search index from the documents in Blob Storage.
 
 - Create an Azure AI Search instance (Basic SKU is sufficient to control cost).
-- Import and vectorize your datasets and create an index.
-- Once the indexer finishes, validate the index:
-  - Document count is greater than 0.
-  - A test query in Search Explorer returns relevant content from your documents.
+- Use the **Import data** option in AI Search to connect to your Blob Storage container.
+- Set the vectorizer kind to **Microsoft Foundry**, and select your `text-embedding-ada-002` deployment. Run the indexer.
+
+<validation step="082b146f-d781-43f0-8878-89c5680b0af9" />
+ 
+> **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
 
 ---
 
@@ -67,6 +86,13 @@ Build the AI agent in Microsoft Foundry and connect it to your knowledge index.
   - Return a clear fallback message when the answer is not found in the index.
   - Format policy comparisons as a structured table.
 - Test the agent in the Microsoft Foundry chat playground. Run at least five queries covering different scenarios - a direct lookup, a summary, a cross-document comparison, a recommendation, and an out-of-scope question. Confirm every in-scope answer includes a citation.
+
+<validation step="a589c4e0-175a-4b8a-b724-b4cf1db56c4c" />
+ 
+> **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
 
 ---
 

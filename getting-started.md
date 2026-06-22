@@ -52,17 +52,19 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
 ---
 
-## Locate the Sample Dataset
+## Download and Extract the Sample Dataset
 
-Before starting the challenge, verify that the sample dataset has been provisioned in the lab environment. These documents will serve as the enterprise knowledge source for your copilot throughout the challenge.
+Before starting the challenge, download and extract the sample dataset. These documents will serve as the enterprise knowledge source for your copilot throughout the challenge.
 
-1. In the Windows search box, enter **File Explorer (1)**, and then select **File Explorer (2)** from the search results.
+1. Open a web browser, navigate to the following URL, and download the sample dataset ZIP file:
 
-   ![](./media/know-ent-gs-g3.png)
+   ```
+   https://github.com/CloudLabsAI-Azure/hack-in-a-day-data/archive/refs/heads/htb-enterprise-knowledge.zip
+   ```
 
-1. In **This PC (1)**, verify that the **C:\datasets (2)** folder contains the **Finance**, **HR**, and **IT (3)** folders.
+1. After the download is complete, open **File Explorer (1)**, navigate to the **Downloads (2)** folder, right-click the downloaded **htb-enterprise-knowledge.zip (3)** file, and then select **Extract All (4)**.
 
-   ![](./media/know-ent-gs-g4.png)
+   > **Note:** Extract the contents to a location that is easy to access, such as the **Downloads** folder or **Desktop**. You will use these files later in the challenge as the enterprise knowledge source.
 
 ## Setup Copilot studio
 
@@ -88,7 +90,7 @@ Before starting the challenge, verify that the sample dataset has been provision
 
    ![](./media/uppowadminimg3.png)
 
-1. On this page, check whether `https://sandboxailabs1001.onmicrosoft.com/cloudlabs.ai` or `https://cloudlabssandbox.onmicrosoft.com/cloudlabs.ai/` is already added. If either one is present, skip to Step 17. Otherwise, proceed with the steps below.
+1. On this page, check whether `https://sandboxailabs1001.onmicrosoft.com/cloudlabs.ai` is already added. If it is present, skip to Step 17. Otherwise, proceed with the steps below.
 
    ![](./media/powerplat.png)
 
@@ -96,7 +98,7 @@ Before starting the challenge, verify that the sample dataset has been provision
 
    ![](./media/pro-activ-gg-g4.png)
 
-1. In the **Add an app from Microsoft Entra ID** pane, enter `https://sandboxailabs1001.onmicrosoft.com/cloudlabs.ai` or `https://cloudlabssandbox.onmicrosoft.com/cloudlabs.ai/` in the search box **(1)**, select whichever app is available from the results **(2)**, and then click **Add (3)**.
+1. In the **Add an app from Microsoft Entra ID** pane, enter `https://sandboxailabs1001.onmicrosoft.com/cloudlabs.ai` in the search box **(1)**, select whichever app is available from the results **(2)**, and then click **Add (3)**.
 
    ![](./media/pro-activ-gg-g5.png)
 
