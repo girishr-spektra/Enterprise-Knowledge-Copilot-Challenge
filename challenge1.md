@@ -10,7 +10,7 @@ The challenge is complete when your Microsoft Foundry agent returns accurate, ci
 
 ## Prerequisites
 
-Deploy all resources in the **same region** (recommended: sweden central, west us 2, ) before you start.
+Deploy all resources in the **<inject key="Region"></inject>** region before you start.
 
 | Resource | Recommended SKU | Notes |
 |---|---|---|
