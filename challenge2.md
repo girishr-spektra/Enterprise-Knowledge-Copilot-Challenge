@@ -29,6 +29,13 @@ Create the conversational interface that employees will use to query the knowled
 - Connect Azure AI Search as a knowledge source.
 - Configure the agent's instructions to enforce grounded, cited responses - consistent with how the Microsoft Foundry agent was configured in Challenge 1.
 
+<validation step="ce50c581-0969-4088-8605-884888d89004" />
+ 
+> **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
+
 ---
 
 ### 2. Conversation Topics
@@ -56,7 +63,7 @@ Publish the copilot and confirm it works end-to-end through the live channel.
   - Describe a business situation and ask which policy applies - confirm the recommendation names the correct document and section.
 - All three responses must be accurate, grounded, and free from hallucinated content.
 
-<validation step="a589c4e0-175a-4b8a-b724-b4cf1db56c4c" />
+<validation step="5effe96c-8ee6-4e7d-9b76-7d57a3b8608f" />
  
 > **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 
