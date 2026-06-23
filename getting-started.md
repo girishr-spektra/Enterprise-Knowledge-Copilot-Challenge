@@ -86,21 +86,23 @@ Before starting the challenge, download and extract the sample dataset. These do
 
    ![](./media/pro-activ-gg-g3.png)
 
+   > <span style="color:red"><strong>Important:</strong> Check whether <code>https://sandboxailabs1007.onmicrosoft.com/cloudlabs.ai</code> is already added. If either one is present, <strong>skip to Step 12</strong>. Otherwise, proceed with the steps below.</span>
+
+   ![](./media/powerplat.png)
+
 1. In the next pane, click on **+ New app user**.
 
    ![](./media/uppowadminimg3.png)
-
-1. On this page, check whether `https://sandboxailabs1001.onmicrosoft.com/cloudlabs.ai` is already added. If it is present, skip to Step 17. Otherwise, proceed with the steps below.
-
-   ![](./media/powerplat.png)
 
 1. In the create a new app user pane, under **App**, click on **+ Add an app**.
 
    ![](./media/pro-activ-gg-g4.png)
 
-1. In the **Add an app from Microsoft Entra ID** pane, enter `https://sandboxailabs1001.onmicrosoft.com/cloudlabs.ai` in the search box **(1)**, select whichever app is available from the results **(2)**, and then click **Add (3)**.
+1. In the **Add an app from Microsoft Entra ID** pane, enter `https://sandboxailabs1007.onmicrosoft.com/cloudlabs.ai` in the search box **(1)**, select whichever app is available from the results **(2)**, and then click **Add (3)**.
 
    ![](./media/pro-activ-gg-g5.png)
+
+   > <span style="color:red"><strong>Important:</strong> If you cannot find the app in the search results, it is likely that it has already been added. Return to the <strong>Step 3</strong> and verify whether the app is listed. If it is present, skip to <strong>Step 12</strong>.</span>
 
 1. Under **Business unit**, select the available business unit from the list **(2)**.
 
