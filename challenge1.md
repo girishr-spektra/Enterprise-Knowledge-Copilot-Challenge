@@ -87,13 +87,6 @@ Build the AI agent in Microsoft Foundry and connect it to your knowledge index.
   - Format policy comparisons as a structured table.
 - Test the agent in the Microsoft Foundry chat playground. Run at least five queries covering different scenarios - a direct lookup, a summary, a cross-document comparison, a recommendation, and an out-of-scope question. Confirm every in-scope answer includes a citation.
 
-<validation step="a589c4e0-175a-4b8a-b724-b4cf1db56c4c" />
- 
-> **Congratulations** on completing the Challenge! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding Challenge. If you receive a success message, you can proceed to the next Challenge. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help.
-
 ---
 
 ## Success Criteria
