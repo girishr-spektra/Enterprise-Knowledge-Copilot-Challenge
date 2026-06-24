@@ -81,5 +81,3 @@ Before submitting, confirm the following:
 - The fallback topic returns a "not found" message for out-of-scope queries.
 - The copilot is published and accessible via a live web channel URL.
 - All three validation scenarios return cited, grounded responses through the live URL.
-
-Click **Next** at the bottom of the page to proceed to the Bonus Challenge.
