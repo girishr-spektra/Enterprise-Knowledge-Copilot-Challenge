@@ -101,5 +101,3 @@ Before moving to Challenge 2, confirm the following:
 - The agent returns a clear fallback message (not a hallucinated answer) for an out-of-scope question.
 
 ---
-
-Click **Next** at the bottom of the page to proceed to Challenge 2.
