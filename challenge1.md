@@ -44,6 +44,9 @@ Set up the storage layer that holds your enterprise policy corpus.
 Prepare the models your agent and index will rely on.
 
 - In your Microsoft Foundry project, deploy the following two models:
+- Once the project is deployed, select **Navigate to Foundry portal** to open it.
+- In the Foundry portal, switch to the **old version** using the toggle at the top of the page.
+- In your Microsoft Foundry project, deploy the following two models:
   - A chat completion model - use `gpt-4.1` or `gpt-4.1-mini` (whichever is available in your region).
   - An embedding model - use `text-embedding-ada-002`.
 - Note the deployment names - you will need them when configuring the index and agent.
